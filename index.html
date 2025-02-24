@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Resources</title>
+  <!-- Bootstrap CSS for styling -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Handlebars JS -->
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.min.js"></script>
+  <style>
+    /* General Page Styling */
+    body {
+      background-color: #f8f9fa;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Sticky Navbar */
+    .navbar {
+      background-color: #343a40 !important;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Navbar Links */
+    .navbar-nav .nav-item {
+      margin: 0 5px; /* Adds spacing between menu items */
+    }
+
+    .navbar-nav .nav-link {
+      padding: 10px 15px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.15); /* Subtle hover effect */
+      color: #ffc107 !important; /* Highlighted text on hover */
+    }
+
+    /* Active link styling */
+    .navbar-nav .nav-link.active {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff !important;
+    }
+
+
+    /* Section Background Colors */
+    .section-bg:nth-child(1) { background-color: #e3f2fd; } /* Light Blue */
+    .section-bg:nth-child(2) { background-color: #f3e5f5; } /* Light Purple */
+    .section-bg:nth-child(3) { background-color: #e8f5e9; } /* Light Green */
+    .section-bg:nth-child(4) { background-color: #fff3e0; } /* Light Orange */
+    .section-bg:nth-child(5) { background-color: #ffebee; } /* Light Red */
+
+    /* Section Headers */
+    .section-header {
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.75rem;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    /* Card Styling */
+    .card {
+      border-radius: 8px;
+      transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+      border: none;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    }
+    .card-header {
+      background: #4e73df;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+    }
+    .card-body {
+      padding: 1rem;
+    }
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+    <span id="top"></span>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">AI Resources</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto" id="navbar-links">
+          <!-- Navbar links rendered here -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- Main Content Container -->
+  <div class="container my-5" id="content">
+    <!-- Category sections rendered here -->
+  </div>
+  
+  <!-- Handlebars Template for Navbar -->
+  <script id="navbar-template" type="text/x-handlebars-template">
+    {{#each super_categories}}
+      <li class="nav-item">
+        <a class="nav-link" href="#{{toId title}}">{{title}}</a>
+      </li>
+    {{/each}}
+  </script>
+  
+  <!-- Handlebars Template for Content Sections -->
+  <script id="content-template" type="text/x-handlebars-template">
+    {{#each super_categories}}
+        <section id="{{toId title}}" class="mb-5 p-4 rounded section-bg">
+            <div class="section-header">{{title}}</div>
+        
+            {{#each categories}}
+            <section id="{{toId title}}" class="mb-5">
+                <div class="d-flex justify-content-between align-items-center mb-4">
+                    <h3 class="text-primary">{{title}}</h3>
+                    <a href="#top" class="btn btn-outline-secondary btn-sm">
+                    &uarr; Back to top
+                    </a>
+                </div>          
+                <div class="row">
+                {{#each resources}}
+                    <div class="col-md-4 mb-4">
+                    <a href="{{link}}" target="_blank" class="card-link">
+                        <div class="card h-100 shadow-sm">
+                        <div class="card-header">
+                            {{title}}
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">{{content}}</p>
+                        </div>
+                        </div>
+                    </a>
+                    </div>
+                {{/each}}
+                </div>
+            </section>
+            {{/each}}
+        
+        </section>
+    {{/each}}
+  </script>
+  
+  <script>
+    // Register a helper to convert titles into valid IDs (lowercase with hyphens)
+    Handlebars.registerHelper('toId', function(title) {
+      return title.replace(/\s+/g, '-').toLowerCase();
+    });
+    
+    // Fetch the JSON data from a local file named "data2.json"
+    fetch('data2.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok " + response.statusText);
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Render the navbar
+        const navbarSource = document.getElementById('navbar-template').innerHTML;
+        const navbarTemplate = Handlebars.compile(navbarSource);
+        document.getElementById('navbar-links').innerHTML = navbarTemplate(data);
+  
+        // Render the content sections
+        const contentSource = document.getElementById('content-template').innerHTML;
+        const contentTemplate = Handlebars.compile(contentSource);
+        document.getElementById('content').innerHTML = contentTemplate(data);
+      })
+      .catch(error => console.error('Error fetching JSON data:', error));
+  </script>
+
+  <script>
+    fetch('data2.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok " + response.statusText);
+        }
+        return response.json();
+      })
+      .then(data => {
+        // Render the navbar
+        const navbarSource = document.getElementById('navbar-template').innerHTML;
+        const navbarTemplate = Handlebars.compile(navbarSource);
+        document.getElementById('navbar-links').innerHTML = navbarTemplate(data);
+
+        // Render the content sections
+        const contentSource = document.getElementById('content-template').innerHTML;
+        const contentTemplate = Handlebars.compile(contentSource);
+        document.getElementById('content').innerHTML = contentTemplate(data);
+
+        // Now apply the smooth scroll fix
+        setupSmoothScrolling();
+      })
+      .catch(error => console.error('Error fetching JSON data:', error));
+
+    function setupSmoothScrolling() {
+        const navbar = document.querySelector(".navbar");
+        const navbarHeight = navbar ? navbar.offsetHeight : 70;
+
+        document.querySelectorAll("a.nav-link").forEach(anchor => {
+            anchor.addEventListener("click", function(event) {
+                event.preventDefault();
+                const targetId = this.getAttribute("href").substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+                    console.log(`Scrolling to: ${targetId}, Offset: ${offsetTop}px`); // Debugging
+
+                    window.scrollTo({ top: offsetTop, behavior: "smooth" });
+                }
+            });
+        });
+
+        console.log("✅ Smooth scrolling script initialized after content render.");
+    }
+
+  </script>   
+
+    <!-- Bootstrap Bundle JS (includes Popper for navbar functionality) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
