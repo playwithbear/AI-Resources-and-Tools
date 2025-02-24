@@ -1,0 +1,197 @@
+{
+    "super_categories": [
+        {
+            "title": "Chatbots and Search",
+            "categories": [
+                {
+                    "title": "AI Assistants (Chatbots)",
+                    "resources": [
+                        {"title": "ChatGPT", "content": "An AI-powered chatbot developed by OpenAI for natural language conversations, assistance, and content creation.", "link": "https://chat.openai.com/", "pricing": "freemium"},
+                        {"title": "Claude", "content": "Anthropic’s AI chatbot designed for meaningful conversations, research assistance, and ethical AI interactions.", "link": "https://www.anthropic.com/claude", "pricing": "freemium"},
+                        {"title": "Gemini", "content": "Google’s AI chatbot optimized for dynamic conversations, knowledge retrieval, and real-time assistance.", "link": "https://gemini.google.com/", "pricing": "free"},
+                        {"title": "DeepSeek", "content": "Multilingual AI chatbot designed for complex problem-solving and research applications.", "link": "https://deepseek.com/", "pricing": "freemium"},
+                        {"title": "Grok", "content": "Elon Musk’s AI chatbot built with humor, real-time internet connectivity, and deep learning capabilities.", "link": "https://x.ai/", "pricing": "freemium"},
+                        {"title": "Qwen", "content": "Alibaba’s AI chatbot optimized for business, customer interactions, and multilingual communication.", "link": "https://qwen.aliyun.com/", "pricing": "freemium"}
+                    ]
+                },
+                {
+                    "title": "Search Engines",
+                    "resources": [
+                        {"title": "Perplexity", "content": "AI-powered search engine that provides well-sourced and context-aware search results.", "link": "https://www.perplexity.ai/", "pricing": "freemium"},
+                        {"title": "ChatGPT Search", "content": "OpenAI's search-enabled chatbot with web browsing capabilities for real-time answers.", "link": "https://chat.openai.com/", "pricing": "freemium"}
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Writing and Research",
+            "categories": [
+                {
+                    "title": "Writing and Research",
+                    "resources": [
+                        {"title": "Deep Research", "content": "AI-powered tool for discovering, analyzing, and summarizing research papers and academic content.", "link": "https://www.deepresearch.com/", "pricing": "freemium"},
+                        {"title": "Rytr", "content": "AI-driven writing assistant that generates high-quality articles, blogs, and marketing copy.", "link": "https://rytr.me/", "pricing": "freemium"},
+                        {"title": "Sudowrite", "content": "AI-powered tool that assists creative writers with brainstorming, editing, and rewriting.", "link": "https://www.sudowrite.com/", "pricing": "paid"},
+                        {"title": "Elicit", "content": "AI-powered research assistant that automates literature reviews and research synthesis.", "link": "https://elicit.org/", "pricing": "freemium"}
+                    ]
+                },
+                {
+                    "title": "Grammar and Writing Improvement",
+                    "resources": [
+                        {"title": "Grammarly", "content": "AI-powered writing assistant that enhances grammar, clarity, and tone in real-time.", "link": "https://www.grammarly.com/", "pricing": "freemium"},
+                        {"title": "Wordtune", "content": "AI-based writing improvement tool that enhances readability and rewrites sentences for better clarity.", "link": "https://www.wordtune.com/", "pricing": "freemium"}
+                    ]
+                },
+                {
+                    "title": "Knowledge Management",
+                    "resources": [
+                        {"title": "Notion AI Q&A", "content": "AI-powered assistant within Notion that answers questions and automates documentation workflows.", "link": "https://www.notion.so/ai", "pricing": "freemium"},
+                        {"title": "Guru", "content": "AI-powered internal knowledge management platform that helps teams organize and access information efficiently.", "link": "https://www.getguru.com/", "pricing": "freemium"}
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Content and Media",
+            "categories": [
+                {
+                    "title": "Video Generation and Editing",
+                    "resources": [
+                        {"title": "Synthesia", "content": "AI-powered video creation tool that generates professional videos with avatars and voiceovers.", "link": "https://www.synthesia.io/", "pricing": "paid"},
+                        {"title": "Runway", "content": "AI-driven video editing platform for generating, modifying, and enhancing video content.", "link": "https://runwayml.com/", "pricing": "freemium"},
+                        {"title": "Filmora", "content": "AI-assisted video editing software with automation, transitions, and smart effects.", "link": "https://filmora.wondershare.com/", "pricing": "paid"},
+                        {"title": "OpusClip", "content": "AI-powered tool that turns long videos into engaging short-form clips optimized for social media.", "link": "https://www.opus.pro/", "pricing": "freemium"}
+                    ]
+                },
+                {
+                    "title": "Image and Graphic Design",
+                    "resources": [
+                        {"title": "Midjourney", "content": "AI-driven image generation tool that creates artistic visuals from text prompts.", "link": "https://www.midjourney.com/", "pricing": "paid"},
+                        {"title": "DALL·E 3", "content": "OpenAI’s AI-powered tool for generating high-quality images from text descriptions.", "link": "https://openai.com/dall-e/", "pricing": "freemium"},
+                        {"title": "Canva Magic Studio", "content": "AI-powered design suite for creating graphics, presentations, and visual content effortlessly.", "link": "https://www.canva.com/magic-studio/", "pricing": "freemium"},
+                        {"title": "Looka", "content": "AI-powered logo and branding tool for designing business identities.", "link": "https://looka.com/", "pricing": "paid"}
+                    ]
+                },
+                {
+                    "title": "Voice Generation",
+                    "resources": [
+                        {"title": "ElevenLabs", "content": "AI-powered voice synthesis platform that generates realistic, human-like speech for various applications.", "link": "https://elevenlabs.io/", "pricing": "paid"},
+                        {"title": "Murf", "content": "AI-driven voice generator that provides high-quality synthetic voices for content creation and voiceovers.", "link": "https://www.murf.ai/", "pricing": "freemium"}
+                    ]
+                },
+                {
+                    "title": "Music Generation",
+                    "resources": [
+                        {"title": "Suno", "content": "AI-powered music composition tool that generates original songs and melodies.", "link": "https://www.suno.ai/", "pricing": "freemium"},
+                        {"title": "Udio", "content": "AI-driven music generation platform that creates custom audio tracks for various use cases.", "link": "https://www.udio.com/", "pricing": "paid"}
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Productivity Tools",
+            "categories": [
+                {
+                    "title": "Notetakers and Meeting Assistants",
+                    "resources": [
+                        {"title": "Fathom", "content": "AI-powered meeting assistant that records, transcribes, and summarizes discussions.", "link": "https://fathom.video/", "pricing": "freemium"},
+                        {"title": "Nyota", "content": "AI-driven note-taking tool that provides structured summaries and insights.", "link": "https://www.nyota.ai/", "pricing": "freemium"},
+                        {"title": "OtterAI", "content": "AI-powered transcription and meeting assistant that captures and organizes spoken content.", "link": "https://otter.ai/", "pricing": "freemium"},
+                        {"title": "FirefliesAI", "content": "AI meeting assistant that records, transcribes, and analyzes conversations.", "link": "https://fireflies.ai/", "pricing": "freemium"},
+                        {"title": "Reclaim", "content": "AI-powered smart calendar assistant that helps users balance tasks and meetings.", "link": "https://reclaim.ai/", "pricing": "freemium"},
+                        {"title": "Clockwise", "content": "AI scheduling tool that optimizes meeting times and improves focus time.", "link": "https://www.getclockwise.com/", "pricing": "freemium"}
+                    ]
+                },
+                {
+                    "title": "Presentations & Visual Content",
+                    "resources": [
+                        {"title": "Gamma", "content": "AI-powered tool for generating and designing presentations.", "link": "https://gamma.app/", "pricing": "freemium"},
+                        {"title": "Presentations.ai", "content": "AI-assisted presentation creation platform.", "link": "https://www.presentations.ai/", "pricing": "freemium"}
+                    ]
+                },
+                {
+                    "title": "Resume Builders",
+                    "resources": [
+                        {"title": "Teal", "content": "AI-powered resume builder with smart career tracking.", "link": "https://www.tealhq.com/", "pricing": "freemium"},
+                        {"title": "Kickresume", "content": "AI-assisted resume and cover letter builder.", "link": "https://www.kickresume.com/", "pricing": "freemium"}
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Business Tools",
+            "categories": [
+                {
+                    "title": "Social Media Management",
+                    "resources": [
+                        {"title": "Vista Social", "content": "AI-powered social media management platform for content scheduling, engagement, and analytics.", "link": "https://www.vistasocial.com/", "pricing": "freemium"},
+                        {"title": "FeedHive", "content": "AI-driven social media automation tool for optimizing content and increasing engagement.", "link": "https://www.feedhive.com/", "pricing": "freemium"}
+                    ]
+                },
+                {
+                    "title": "Marketing & Sales",
+                    "resources": [
+                        {"title": "AdCreative", "content": "AI-powered marketing tool that generates ad creatives optimized for conversions.", "link": "https://www.adcreative.ai/", "pricing": "paid"},
+                        {"title": "Clay", "content": "AI-driven sales automation tool that helps businesses find and engage with prospects.", "link": "https://www.clay.com/", "pricing": "paid"},
+                        {"title": "Copy.ai", "content": "AI-powered copywriting assistant for marketing and sales teams.", "link": "https://www.copy.ai/", "pricing": "freemium"},
+                        {"title": "MarketMuse", "content": "AI-powered content optimization and SEO tool.", "link": "https://www.marketmuse.com/", "pricing": "paid"}
+                    ]
+                },
+                {
+                    "title": "Email Management",
+                    "resources": [
+                        {"title": "Hubspot Email Writer", "content": "AI-powered email writing tool that enhances marketing and sales communication.", "link": "https://www.hubspot.com/products/marketing/email", "pricing": "freemium"},
+                        {"title": "SaneBox", "content": "AI email management system that prioritizes important messages and reduces inbox clutter.", "link": "https://www.sanebox.com/", "pricing": "freemium"},
+                        {"title": "Shortwave", "content": "AI-driven email assistant that helps users manage and organize Gmail more efficiently.", "link": "https://www.shortwave.com/", "pricing": "freemium"}
+                    ]
+                },
+                {
+                    "title": "Project Management & Scheduling",
+                    "resources": [
+                        {"title": "Asana", "content": "Project management tool with AI features for workflow automation.", "link": "https://asana.com/", "pricing": "freemium"},
+                        {"title": "Reclaim", "content": "AI-powered smart calendar assistant for time management.", "link": "https://reclaim.ai/", "pricing": "freemium"},
+                        {"title": "Clockwise", "content": "AI-driven scheduling assistant that optimizes meetings and focus time.", "link": "https://www.getclockwise.com/", "pricing": "freemium"},
+                        {"title": "ClickUp AI", "content": "AI-powered productivity and task management assistant.", "link": "https://www.clickup.com/ai/", "pricing": "freemium"},
+                        {"title": "Motion AI", "content": "AI-powered task scheduler that prioritizes work dynamically.", "link": "https://www.usemotion.com/", "pricing": "paid"}
+                    ]
+                },
+                {
+                    "title": "Customer Service & Recruitment",
+                    "resources": [
+                        {"title": "Tidio AI", "content": "AI-powered chatbot and live chat for customer support.", "link": "https://www.tidio.com/", "pricing": "freemium"},
+                        {"title": "Hiver", "content": "AI-driven email support platform for customer service teams.", "link": "https://hiverhq.com/", "pricing": "freemium"},
+                        {"title": "Textio", "content": "AI-powered hiring tool that optimizes job descriptions and recruitment processes.", "link": "https://textio.com/", "pricing": "paid"},
+                        {"title": "CVViZ", "content": "AI-driven recruitment software for automated candidate screening.", "link": "https://www.cvviz.com/", "pricing": "paid"},
+                        {"title": "Drift", "content": "AI-powered chatbot and conversational marketing platform.", "link": "https://www.drift.com/", "pricing": "freemium"},
+                        {"title": "Intercom AI", "content": "AI-driven chatbot and customer support automation.", "link": "https://www.intercom.com/", "pricing": "paid"}
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "App Builders & Coding AI",
+            "categories": [
+                {
+                    "title": "App Builders",
+                    "resources": [
+                        {"title": "Bubble", "content": "No-code AI-powered app development platform.", "link": "https://bubble.io/", "pricing": "freemium"},
+                        {"title": "Bolt", "content": "AI-enhanced platform for building and deploying applications.", "link": "https://bolt.new/", "pricing": "freemium"},
+                        {"title": "Lovable", "content": "AI-driven app builder for quickly creating digital products.", "link": "https://www.lovable.io/", "pricing": "freemium"},
+                        {"title": "Cursor", "content": "AI-powered coding assistant designed to boost productivity.", "link": "https://cursor.sh/", "pricing": "freemium"},
+                        {"title": "v0", "content": "AI-powered low-code platform for developing and scaling web applications.", "link": "https://v0.dev/", "pricing": "freemium"}
+                    ]
+                },
+                {
+                    "title": "Code Generation & Development",
+                    "resources": [
+                        {"title": "GitHub Copilot", "content": "AI-powered coding assistant that provides real-time code suggestions in your IDE.", "link": "https://github.com/features/copilot", "pricing": "paid"},
+                        {"title": "Tabnine", "content": "AI-driven code completion tool for various programming languages.", "link": "https://www.tabnine.com/", "pricing": "freemium"},
+                        {"title": "Codeium", "content": "AI-powered code generation and autocomplete for developers.", "link": "https://codeium.com/", "pricing": "freemium"},
+                        {"title": "Mutable AI", "content": "AI-enhanced development tool that speeds up coding tasks.", "link": "https://mutable.ai/", "pricing": "freemium"}
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
